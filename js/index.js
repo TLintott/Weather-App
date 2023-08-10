@@ -41,7 +41,7 @@ document.querySelector("#humidity").innerHTML= response.data.main.humidity;
 }
 
 function cityData(city) {
-  let apiKey = "812c2f7ac6ed12862f12ee1cd76e227e";
+  let apiKey = "6d755efa4ae6cedba7776a55075f4e68";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
   
@@ -50,12 +50,12 @@ function cityData(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#city").value;
-  searchCity(city);
+  cityData(city);
 }
 
 //Find Location Button
 function findLocation (position) {
-let apiKey = "812c2f7ac6ed12862f12ee1cd76e227e";
+let apiKey = "6d755efa4ae6cedba7776a55075f4e68";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(showWeather);
