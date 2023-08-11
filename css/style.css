@@ -67,6 +67,7 @@ li {
 small{
     font-family: monospace;
     padding-bottom: 25px;
+    text-align: center;
 }
 .emoji{
 font-family: 'Roboto', sans-serif;

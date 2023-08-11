@@ -49,7 +49,7 @@ function cityData(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector("#city").value;
+  let city = document.querySelector("#cityinput").value;
   cityData(city);
 }
 
